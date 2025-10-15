@@ -1,0 +1,6 @@
+path: data/YOLO_FISH_SEG
+train: images/train
+val: images/val
+
+names:
+  0: fish

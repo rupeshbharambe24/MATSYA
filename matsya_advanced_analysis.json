@@ -1,0 +1,64 @@
+{
+  "pipeline_version": "MATSYA-Advanced-v1.0",
+  "processing_timestamp": 1760032641.1456642,
+  "analysis_summary": {
+    "total_images_processed": 1,
+    "total_fish_detected": 1,
+    "average_confidence": 1.0
+  },
+  "detailed_results": {
+    "Black Pomfret.jpg": {
+      "basic_results": {
+        "count": 1,
+        "items": [
+          {
+            "box": [
+              35,
+              71,
+              968,
+              541
+            ],
+            "species": "Black Pomfret",
+            "species_conf": 1.0,
+            "freshness": "fresh",
+            "fresh_conf": 0.8936915397644043,
+            "length_mm": 350.0,
+            "weight_g": 643.125,
+            "volume_cm3": 618.3894230769231,
+            "scale_mode": "none",
+            "q_scale": 0.2,
+            "lwr_mode": "fultonK",
+            "advanced_metrics": {
+              "composite_confidence": 0.6978971799214682,
+              "reliability_index": 0.5362149238586426,
+              "size_plausibility": 0.7068965517241379
+            },
+            "geometry": {
+              "aspect_ratio": 1.9851063829787234,
+              "bounding_box_area": 438510,
+              "image_coverage": 0.7038604702675892
+            },
+            "uncertainty": {
+              "length_relative_error": 0.22,
+              "weight_relative_error": 0.66
+            }
+          }
+        ]
+      },
+      "advanced_analytics": {
+        "quality_metrics": {
+          "average_species_confidence": 1.0,
+          "average_freshness_confidence": 0.8936915397644043,
+          "scale_reliability_score": 0.2
+        },
+        "size_statistics": {
+          "length_range": {
+            "min": 350.0,
+            "max": 350.0,
+            "mean": 350.0
+          }
+        }
+      }
+    }
+  }
+}
