@@ -19,9 +19,9 @@ Notes:
   - Resilient parsing (label mapping + whitespace normalization).
 
 Usage:
-  python fishbase_lw_scrape_v3.py \
+  python scripts/fishbase_lw_scrape.py \
     --start-url "https://www.fishbase.org/topic/List.php?group=lw" \
-    --out "excel_fishbase_lw.xlsx" \
+    --out "assets/fishbase_lw_raw.xlsx" \
     --delay 1.0 \
     --max-species 0     # 0 = all species from list page
 
@@ -293,7 +293,7 @@ def parse_detail(session, detail_url: str, delay: float) -> dict:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--start-url", required=True)
-    ap.add_argument("--out", default="excel_fishbase_lw.xlsx")
+    ap.add_argument("--out", default="assets/fishbase_lw_raw.xlsx")
     ap.add_argument("--delay", type=float, default=1.0)
     ap.add_argument("--timeout", type=float, default=25.0)
     ap.add_argument("--max-species", type=int, default=0, help="Process first N species only (0 = all)")

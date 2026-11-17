@@ -1,10 +1,11 @@
-# save as D:\Projects\MATSYA\codes\make_yolo_seg.py
+# Convert the Large-Scale Fish Dataset (image + GT mask pairs) into YOLOv8-seg polygon labels.
+# Run from the repository root:  python scripts/make_yolo_seg.py
 import os, cv2, glob, random, shutil
 import numpy as np
 
 # ---- configure these ----
-ROOT = r"D:\PROJECTS\MATSYA\CODES\DATA\LARGE SCALE FISH DATASET\Fish_Dataset\Fish_Dataset"
-OUT  = r"D:\PROJECTS\MATSYA\CODES\DATA\YOLO_FISH_SEGtest"
+ROOT = r"data/LARGE SCALE FISH DATASET/Fish_Dataset/Fish_Dataset"
+OUT  = r"data/YOLO_FISH_SEG"  # matches configs/fish_seg.yaml
 VAL_FRACTION = 0.15
 RANDOM_SEED = 42
 MIN_POLY_POINTS = 12      # increase for smoother polygons

@@ -1,0 +1,19 @@
+# Versions in the training logs: Python 3.11, torch 2.6.0 (CUDA 12.4), Ultralytics 8.3.203
+ultralytics==8.3.203
+torch>=2.6
+torchvision
+opencv-python>=4.7      # cv2.aruco (ArUco scale marker)
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+pyyaml
+onnx                    # model export
+tabulate
+# FishBase scraper / LWR table
+requests
+beautifulsoup4
+openpyxl
+# notebooks
+jupyter

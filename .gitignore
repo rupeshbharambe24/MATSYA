@@ -1,5 +1,24 @@
-# Ignore the entire 'data' folder
+# Datasets (download separately, see README)
 data/
-
-# Ignore the specific file 'models.zip'
+freshness_crops_cls/
 models.zip
+
+# Ultralytics pretrained base weights (auto-downloaded on first use)
+/yolo*.pt
+/yolov8*.pt
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
